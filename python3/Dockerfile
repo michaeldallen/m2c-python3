@@ -22,6 +22,6 @@ RUN pip install pytest
 
 WORKDIR /workdir
 
-CMD ["pytest", "-v"]
+CMD ["python3"]
 
 #EOF
