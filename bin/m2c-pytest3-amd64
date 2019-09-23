@@ -1,0 +1,12 @@
+#!/bin/bash
+
+docker \
+    run \
+        --volume `pwd`:/workdir:ro \
+        michaeldallen/m2c-python3-amd64 \
+        -m pytest \
+        -p no:cacheprovider \
+        "$@"
+
+
+#EOF
