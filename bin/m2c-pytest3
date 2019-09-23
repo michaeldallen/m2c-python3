@@ -1,9 +1,11 @@
 #!/bin/bash
 
+arch=$(dpkg --print-architecture)
+
 docker \
     run \
         --volume `pwd`:/workdir:ro \
-        michaeldallen/m2c-python3-amd64 \
+        michaeldallen/m2c-python3-${arch} \
         -m pytest \
         -p no:cacheprovider \
         "$@"
