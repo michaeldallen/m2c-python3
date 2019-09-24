@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('init') {
             steps {
-                slackSend color: 'good', message: "start ${JOB_NAME} on ${HOSTNAME}: https://github.com/michaeldallen/m2c-python/commit/${GIT_COMMIT}"
+                slackSend color: 'good', message: "start ${JOB_NAME} on ${HOSTNAME}: https://github.com/michaeldallen/m2c-python3/commit/${GIT_COMMIT}"
             }
         }
         stage('sanity-check') {
