@@ -22,4 +22,6 @@ RUN pip install pytest
 
 WORKDIR /workdir
 
+ENTRYPOINT ["python3"]
+
 #EOF
