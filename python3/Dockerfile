@@ -20,6 +20,6 @@ RUN pip3 install pytest
 
 # execution
 WORKDIR /workdir
-CMD ["python3"]
+ENTRYPOINT ["python3"]
 
 #EOF
