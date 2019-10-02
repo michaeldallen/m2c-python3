@@ -2,11 +2,15 @@
 
 arch=$(dpkg --print-architecture)
 
+IAM=michaeldallen/m2c-python3-${arch}
+
+# docker pull ${IAM} && \
 docker \
     run \
 	-it \
+        --rm \
         --volume "`pwd`":/workdir:ro \
-        michaeldallen/m2c-python3-${arch} \
+        ${IAM} \
         "$@"
 
 
