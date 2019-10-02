@@ -4,6 +4,7 @@ arch=$(dpkg --print-architecture)
 
 docker \
     run \
+	-it \
         --volume "`pwd`":/workdir:ro \
         michaeldallen/m2c-python3-${arch} \
         "$@"
