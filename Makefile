@@ -49,7 +49,7 @@ docker.build :
 	docker build --tag ${IAM} python3 
 
 
-docker.run.bash : docker.socket.usable
+docker.run.bash : 
 	docker \
 		run \
 		-it \
