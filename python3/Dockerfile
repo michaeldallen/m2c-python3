@@ -14,7 +14,18 @@ RUN apt-get update && apt-get -y install \
 
 # Python
 #
-RUN pip3 install pytest 
+RUN pip3 install \
+    \
+    click \
+    \
+    pytest
+
+
+
+# Click
+#
+ENV LC_ALL=C.UTF-8
+ENV LANG=C.UTF-8
 
 
 
