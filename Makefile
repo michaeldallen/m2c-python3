@@ -55,8 +55,9 @@ docker.run.bash :
 		-it \
 		--rm \
 		--volume /var/run/docker.sock:/var/run/docker.sock \
-		${IAM} \
-		/bin/bash
+		--volume "`pwd`":/workdir:ro \
+		--entrypoint /bin/bash \
+		${IAM} 
 
 
 

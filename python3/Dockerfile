@@ -14,8 +14,9 @@ RUN apt-get update && apt-get -y install \
 
 # Python
 #
-RUN pip3 install \
+RUN pip3 install --upgrade \
     \
+    autopep8 \
     click \
     \
     pytest
